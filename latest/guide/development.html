@@ -955,6 +955,15 @@ venv</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">torch-cu12</span></code> extra requires PyTorch built against CUDA 12.8. If your
+driver only supports CUDA 12.4 or 12.5 (check with <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>), install
+PyTorch 2.6.0 manually instead of using the <code class="docutils literal notranslate"><span class="pre">torch-cu12</span></code> extra:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install torch==2.6.0 --extra-index-url https://download.pytorch.org/whl/cu124</span>
+</pre></div>
+</div>
+</div>
 <p>Specific Newton examples can be tested in isolation via the <code class="docutils literal notranslate"><span class="pre">-k</span></code> argument:</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
